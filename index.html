@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>刘鑫的第一次作业(课程表）</title>
+    <style>
+        *{margin:0;padding:0;}
+        .clearfloat{
+            zoom:1;}
+        .clearfloat:after{
+            display:block;
+            clear:both;
+            content:"";
+            visibility:hidden;
+            height:0;
+        }
+        img {
+            border: none;
+        }
+        a{
+            text-decoration: none;
+            display: block;
+        }
+        .public-container {
+              position: relative;
+              margin:0 auto;
+              width:1300px
+        }
+        .public-header {
+            height: 72px;
+            background:#191D3A;
+        }
+        .public-header .header-logo {
+            float:left;
+            height: 60px;
+            width: 170px;
+            background:url("./images/logo.png")
+        }
+        .public-header .header-nav{
+            float:right;
+        }
+        .public-header .header-nav li{
+              list-style:none;
+              float:left;
+              color: #767E8D;
+              margin-left:60px;
+              margin-top:24px;
+        }
+        .public-header .header-nav a{
+            color: #767E8D;
+            cursor: pionter;
+        }
+         .header-nav .btn{
+            font-size: 14px;
+            text-align: center;
+             color: #fff;
+             margin: 1em 4em;
+             background: #38B774;
+             border:2px solid #38B774;
+             border-radius: 3px;
+             width:120px;
+             height: 40px;
+         }
+        .header-nav .btn a{ padding-top: 10px;}
+        .banner{
+            background:url("./images/banner.jpg") no-repeat ;
+            height:475px;
+            width:100%;
+            position: relative;
+        }
+        .banner .btn-group{
+            position: absolute;
+            top:90%;
+            left:45%;
+        }
+        .banner .btn{
+            display: inline-block;
+            margin-right: 1rem;
+            width:8px;
+            height:8px;
+            background: #FDDE90;
+            border:1px solid #dedede;
+            border-radius: 50%;
+            font-size: 0;
+        }
+        .table-content{
+            padding-top: 3em;
+        }
+        .table-content ul{
+            width:100%;
+            list-style:none;
+        }
+        .video-list{
+            float:left;
+            width:18%;
+            margin-right: 6%;
+        }
+        .video-list .video{
+            margin-bottom: 20px;
+            height:158px;
+        }
+        .video-list .video-title{
+            text-align: center ;
+            font-size:16px;
+        }
+        .video-list .video-info{
+            text-align: center ;
+            color:#2FBC71;
+            font-size:14px;
+            margin-top: 6px;
+        }
+        .video-list .video-info img{
+            margin-left: 1em;
+        }
+        .item-line--middle{
+            margin-top: 70px;
+            width:100%;
+        }
+        .item-line--middle .line{
+            display: inline-block ;
+            border-top:1px solid #dedede;
+            margin-top: 0px;
+            width:510px;
+        }
+        .item-line--middle .btn-group{
+            margin-left:4%;
+            margin-right:4%;
+        }
+        .item-line--middle .btn{
+            display: inline-block ;
+            margin-right: 1rem;
+            width:8px;
+            height:8px;
+            background: #B5C0CB;
+            border:1px solid #dedede;
+            border-radius: 50%;
+            font-size: 0;
+        }
+        .news-bg{
+            background: url("images/indexmainbg.jpg ");
+            background-repeat: no-repeat;
+            margin-bottom: 0;
+        }
+        .news{
+            height:380px;
+            margin-top: 55px;
+        }
+        .news-left{
+            background: url("images/bynewsbg.jpg") no-repeat;
+            width:500px;
+            height: 310px;
+            float:left;
+            margin-left: 150px;
+            position: relative;
+        }
+        .news-right{
+            background: url("images/byhrbg3.jpg") no-repeat;
+            width:500px;
+            height: 310px;
+            float:left;
+            position: relative;
+            color:#fff;
+        }
+        .news-left .news-content-l p{line-height: 40px;}
+        .news-right .news-content-r p{line-height: 30px;}
+        .news-left .icon{
+            position: absolute;
+            top:40px;
+            left:230px;
+        }
+        .news-right .icon{
+             position: absolute;
+             top:40px;
+             left:85px;
+         }
+        .news-right .icon-2{
+              position: absolute;
+              top:40px;
+              left:230px;
+        }
+        .news-content-l{
+            position: absolute;
+            top:140px;
+            left:20px;
+        }
+        .news-content-r{
+            position: absolute;
+            top:110px;
+            left:20px;
+        }
+        .public-footer{
+            height: 100px;
+            background:#191D3A;
+            width:100%;
+            color:#767E8D;
+        }
+        .footer-text a{
+              display: inline;
+          }
+        .footer-text p{
+            padding-top: 1em;
+            text-align: center ;
+        }
+
+    </style>
+</head>
+<body>
+<div class="public-header ">
+    <div class="public-container clearfloat">
+        <div class="header-logo"></div>
+        <ul class="header-nav clearfloat" >
+            <li class="item " style="color: #FFF"  ><a href="#" style="color: #FFF" >首页</a></li>
+            <li class="item "><a href="#">博雅游戏</a></li>
+            <li class="item "><a href="#">博雅新闻</a></li>
+            <li class="item "><a href="#">关于我们</a></li>
+            <li class="item "><a href="#">客服中心</a></li>
+            <li class="item "><a href="#">投资者关系</a></li>
+            <div class="btn" style="display: inline-block " ><a href="#">加入我们</a></div>
+        </ul>
+    </div>
+</div>
+<div class="banner">
+    <div class="btn-group">
+        <span class="btn" style="background: #fff;"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+    </div>
+</div>
+
+<div class="public-container table-content">
+    <ul class="clearfloat ">
+        <li class="video-list">
+            <img class="video" src="./images/bpt.jpg"></img>
+            <div class="video-title">BPT宣传片</div>
+            <div class="video-info">点击播放<img src="./images/sanjiaoxing.png"></img></div>
+        </li>
+        <li class="video-list">
+            <img class="video" src="./images/video.jpg"></img>
+            <div class="video-title">博雅互动宣传视频</div>
+            <div class="video-info">点击播放<img src="./images/sanjiaoxing.png"></img></div>
+        </li>
+        <li class="video-list">
+            <img class="video" src="./images/gamepic3.jpg"></img>
+            <div class="video-title">斗地主</div>
+            <div class="video-info">LANDLORDS<img src="./images/sanjiaoxing.png"></img></div>
+        </li>
+        <li class="video-list">
+            <img class="video" src="./images/gamepic1.jpg"></img>
+            <div class="video-title">德州扑克</div>
+            <div class="video-info">TEXAS HOLD'EM POKER
+                <img src="./images/sanjiaoxing.png"  ></img>
+            </div>
+        </li>
+    </ul>
+    <div class="item-line--middle clearfloat">
+        <i class="line"></i>
+        <span class="btn-group">
+            <span class="btn" style="background: #0bb20c;"></span>
+            <span class="btn"></span>
+            <span class="btn"></span>
+            <span class="btn"></span>
+        </span>
+        <i class="line"></i>
+    </div>
+</div>
+<div class="news-bg clearfloat">
+    <div class="news public-container">
+        <div class="news-left">
+            <div class="icon"><img src="./images/more.png"/></div>
+            <div class="news-content-l">
+                <p><span style="color:#B5C0CB">09/28</span>&nbsp;&nbsp;2015博雅国际扑克大赛（BPT)在澳门落幕</p>
+                <hr style="border-top:1px solid #dedede;"/>
+                <p><span style="color:#B5C0CB">08/26</span>&nbsp;&nbsp;2015BPT博雅国际扑克大赛重磅来袭</p>
+                <hr style="border-top:1px solid #dedede;"/>
+                <p><span style="color:#B5C0CB">08/01</span>&nbsp;&nbsp;博雅互动与阿里游戏联手启动“淘宝杯首届电视棋牌大赛</p>
+                <hr style="border-top:1px solid #dedede;"/>
+                <p><span style="color:#B5C0CB">07/21</span>&nbsp;&nbsp;湖南省省长杜家豪一行参观博雅互动</p>
+                <hr style="border-top:1px solid #dedede;"/>
+            </div>
+        </div>
+        <div class="news-right">
+            <div class="icon"><img src="./images/zczp.png"/></div>
+            <div class="icon-2"><img src="./images/more2.png"/></div>
+            <div class="news-content-r">
+                <p>专场招聘岗位：</p>
+                <p>PHP开发工程师</p>
+                <hr style="border-top:1px solid #B5C0CB;width:300px;"/>
+                <p>C++开发工程师</p>
+                <hr style="border-top:1px solid #B5C0CB;"/>
+                <p>WEB前端开发工程师</p>
+                <hr style="border-top:1px solid #B5C0CBe;"/>
+                <p>大数据开发工程师</p>
+                <hr style="border-top:1px solid #B5C0CB;"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="public-footer ">
+    <div class="public-container clearfloat">
+        <div class="footer-text public-container">
+            <p><a>网站地图</a> | <a>免费声明</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright © 2004-2014 博雅互动（Boyaa Interactive) 粤ICP备05062536号 增值电信业务营业许可证：粤B2-20150013
+                <img src="./images/govIcon.gif" style="width:40px;vertical-align:middle">
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
